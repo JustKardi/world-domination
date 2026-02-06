@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    font-family: "open-sans", sans-serif;
+}
+svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+path {
+  fill: #2d2d2d;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  transition: fill 0.2s, stroke-width 0.2s;
+}
+path:hover {
+  stroke-width: 3;
+  cursor: pointer;
+}
+.highlight {
+  fill: #d81e1e !important;
+}
+.container {
+  position: relative;
+  width: 75vw;
+  height: auto;
+  margin-top: 2vh;
+}
+.infoCenter {
+  position: relative;
+  width: 25vw;
+  height: 100vh;
+  background-color: red;
+}
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+}
+.leftStack {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  height: 100vh;  
+}
+.inputContainer {
+  width: 75vw;
+  height: 20vh;
+  margin-top: 7vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  width: 90%;
+  height: 50%;
+  font-size: 3rem;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: black;
+  color: white;
+  border-bottom: 3px solid #2b2b2b;
+  transition: all 0.3s ease-in-out;
+}
+.input:focus {
+  border-bottom: 3px solid #525252;
+}
+.activeCountry {
+    fill: #1ed85f !important;
+}
