@@ -2,7 +2,7 @@ body {
     background-color: black;
     margin: 0;
     overflow: hidden;
-    font-family: "open-sans", sans-serif;
+    font-family: "poppins", sans-serif;
 }
 svg {
   width: 100%;
@@ -33,7 +33,7 @@ path:hover {
   position: relative;
   width: 25vw;
   height: 100vh;
-  background-color: red;
+  border-left: 3px solid #6e6e6e;
 }
 .wrapper {
   display: flex;
@@ -74,4 +74,12 @@ path:hover {
 }
 .activeCountry {
     fill: #1ed85f !important;
+}
+.countryTitle {
+  color: #1ed85f;
+  text-align: center;
+  font-size: 3rem;
+}
+.hovering {
+  color: #d81e1e;
 }
