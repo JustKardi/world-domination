@@ -16,6 +16,10 @@
     "name": "Armenia"
   },
   {
+    "iso2": "AU",
+    "name": "Australia"
+  },
+  {
     "iso2": "AT",
     "name": "Austria"
   },
@@ -80,8 +84,16 @@
     "name": "Central African Republic"
   },
   {
+    "iso2": "CA",
+    "name": "Canada"
+  },
+  {
     "iso2": "CH",
     "name": "Switzerland"
+  },
+  {
+    "iso2": "CN",
+    "name": "China"
   },
   {
     "iso2": "CI",
@@ -124,6 +136,10 @@
     "name": "Djibouti"
   },
   {
+    "iso2": "DK",
+    "name": "Denmark"
+  },
+  {
     "iso2": "DO",
     "name": "Dominican Republic"
   },
@@ -160,6 +176,10 @@
     "name": "Gabon"
   },
   {
+    "iso2": "GB",
+    "name": "United Kingdom"
+  },
+  {
     "iso2": "GE",
     "name": "Georgia"
   },
@@ -182,6 +202,10 @@
   {
     "iso2": "GQ",
     "name": "Equatorial Guinea"
+  },
+  {
+    "iso2": "GR",
+    "name": "Greece"
   },
   {
     "iso2": "GL",
@@ -212,6 +236,10 @@
     "name": "Hungary"
   },
   {
+    "iso2": "ID",
+    "name": "Indonesia"
+  },
+  {
     "iso2": "IN",
     "name": "India"
   },
@@ -236,12 +264,20 @@
     "name": "Israel"
   },
   {
+    "iso2": "IT",
+    "name": "Italy"
+  },
+  {
     "iso2": "JM",
     "name": "Jamaica"
   },
   {
     "iso2": "JO",
     "name": "Jordan"
+  },
+  {
+    "iso2": "JP",
+    "name": "Japan"
   },
   {
     "iso2": "KZ",
@@ -352,6 +388,10 @@
     "name": "Malawi"
   },
   {
+    "iso2": "MY",
+    "name": "Malaysia"
+  },
+  {
     "iso2": "NA",
     "name": "Namibia"
   },
@@ -368,6 +408,10 @@
     "name": "Nicaragua"
   },
   {
+    "iso2": "NO",
+    "name": "Norway"
+  },
+  {
     "iso2": "NP",
     "name": "Nepal"
   },
@@ -382,6 +426,10 @@
   {
     "iso2": "PE",
     "name": "Peru"
+  },
+  {
+    "iso2": "PH",
+    "name": "Philippines"
   },
   {
     "iso2": "PL",
@@ -552,6 +600,14 @@
     "name": "South Africa"
   },
   {
+    "iso2": "NZ",
+    "name": "New Zealand"
+  },
+  {
+    "iso2": "CL",
+    "name": "Chile"
+  },
+  {
     "iso2": "NL",
     "name": "Netherlands"
   },
@@ -562,6 +618,14 @@
   {
     "iso2": "ES",
     "name": "Spain"
+  },
+  {
+    "iso2": "FR",
+    "name": "France"
+  },
+  {
+    "iso2": "US",
+    "name": "United States"
   },
   {
     "iso2": "GF",

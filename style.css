@@ -83,3 +83,7 @@ path:hover {
 .hovering {
   color: #d81e1e;
 }
+.info {
+  color: white;
+  white-space: pre-line;
+}

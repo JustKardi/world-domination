@@ -83,6 +83,27 @@
     },
     "relations": {}
   },
+  "AU": {
+    "iso2": "AU",
+    "name": "Australia",
+    "gdp": 1757022451652.83,
+    "inflation": 3.1616142830575,
+    "unemployment": 3.942,
+    "military_spending": 1.8837883329175,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
   "AT": {
     "iso2": "AT",
     "name": "Austria",
@@ -419,6 +440,27 @@
     },
     "relations": {}
   },
+  "CA": {
+    "iso2": "CA",
+    "name": "Canada",
+    "gdp": 2243636826633.76,
+    "inflation": 2.38158383281173,
+    "unemployment": 6.351,
+    "military_spending": 1.31303419578919,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
   "CH": {
     "iso2": "CH",
     "name": "Switzerland",
@@ -433,6 +475,27 @@
     "tradeBalance": 0,
     "army": 1000,
     "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
+  "CN": {
+    "iso2": "CN",
+    "name": "China",
+    "gdp": 18743803170827.2,
+    "inflation": 0.218128938439177,
+    "unemployment": 4.59,
+    "military_spending": 1.71129740345228,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": true,
     "alliances": {
       "nato": false,
       "un": true,
@@ -650,6 +713,27 @@
     },
     "relations": {}
   },
+  "DK": {
+    "iso2": "DK",
+    "name": "Denmark",
+    "gdp": 424524722037.047,
+    "inflation": 1.37220049768918,
+    "unemployment": 5.358,
+    "military_spending": 2.41617454160591,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
   "DO": {
     "iso2": "DO",
     "name": "Dominican Republic",
@@ -839,6 +923,27 @@
     },
     "relations": {}
   },
+  "GB": {
+    "iso2": "GB",
+    "name": "United Kingdom",
+    "gdp": 3686033044482.13,
+    "inflation": 3.2715729463592,
+    "unemployment": 4.361,
+    "military_spending": 2.2786177901127,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": true,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
   "GE": {
     "iso2": "GE",
     "name": "Georgia",
@@ -951,6 +1056,27 @@
     "inflation": 2.92140227309103,
     "unemployment": 8.293,
     "military_spending": 0.982185856511218,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
+  "GR": {
+    "iso2": "GR",
+    "name": "Greece",
+    "gdp": 256238371778.118,
+    "inflation": 2.74149045788606,
+    "unemployment": 10.02,
+    "military_spending": 3.12797536550149,
     "corruption": 50,
     "humanDevIndex": 0.7,
     "govStability": 100,
@@ -1112,6 +1238,27 @@
     },
     "relations": {}
   },
+  "ID": {
+    "iso2": "ID",
+    "name": "Indonesia",
+    "gdp": 1396300098190.97,
+    "inflation": 2.18151273615189,
+    "unemployment": 3.301,
+    "military_spending": 0.779216788275608,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
   "IN": {
     "iso2": "IN",
     "name": "India",
@@ -1238,6 +1385,27 @@
     },
     "relations": {}
   },
+  "IT": {
+    "iso2": "IT",
+    "name": "Italy",
+    "gdp": 2380825077243.59,
+    "inflation": 0.982373023061417,
+    "unemployment": 6.5,
+    "military_spending": 1.60924561245844,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
   "JM": {
     "iso2": "JM",
     "name": "Jamaica",
@@ -1266,6 +1434,27 @@
     "inflation": 1.55659611283953,
     "unemployment": 16.693,
     "military_spending": 4.80018703722722,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
+  "JP": {
+    "iso2": "JP",
+    "name": "Japan",
+    "gdp": 4027597523550.58,
+    "inflation": 2.73853681635241,
+    "unemployment": 2.5,
+    "military_spending": 1.37139689580634,
     "corruption": 50,
     "humanDevIndex": 0.7,
     "govStability": 100,
@@ -1847,6 +2036,27 @@
     },
     "relations": {}
   },
+  "MY": {
+    "iso2": "MY",
+    "name": "Malaysia",
+    "gdp": 422227005428.688,
+    "inflation": 1.834100204499,
+    "unemployment": 3.846,
+    "military_spending": 0.987556748730683,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
   "NA": {
     "iso2": "NA",
     "name": "Namibia",
@@ -1931,6 +2141,27 @@
     },
     "relations": {}
   },
+  "NO": {
+    "iso2": "NO",
+    "name": "Norway",
+    "gdp": 483592648313.301,
+    "inflation": 3.14530134431073,
+    "unemployment": 4,
+    "military_spending": 2.09124111193175,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
   "NP": {
     "iso2": "NP",
     "name": "Nepal",
@@ -2001,6 +2232,27 @@
     "inflation": 2.00770739412712,
     "unemployment": 5.199,
     "military_spending": 0.909288680359786,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
+  "PH": {
+    "iso2": "PH",
+    "name": "Philippines",
+    "gdp": 461617509782.355,
+    "inflation": 3.21260487006347,
+    "unemployment": 2.202,
+    "military_spending": 1.32426895346612,
     "corruption": 50,
     "humanDevIndex": 0.7,
     "govStability": 100,
@@ -2897,6 +3149,48 @@
     },
     "relations": {}
   },
+  "NZ": {
+    "iso2": "NZ",
+    "name": "New Zealand",
+    "gdp": 260172385097.616,
+    "inflation": 2.92279782301957,
+    "unemployment": 4.724,
+    "military_spending": 1.19404695449297,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
+  "CL": {
+    "iso2": "CL",
+    "name": "Chile",
+    "gdp": 330267137371.592,
+    "inflation": 4.29763891572524,
+    "unemployment": 8.718,
+    "military_spending": 1.57780388625485,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
   "NL": {
     "iso2": "NL",
     "name": "Netherlands",
@@ -2953,6 +3247,48 @@
     "tradeBalance": 0,
     "army": 1000,
     "isNuclear": false,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
+  "FR": {
+    "iso2": "FR",
+    "name": "France",
+    "gdp": 3160442622465.08,
+    "inflation": 1.99904942291463,
+    "unemployment": 7.4,
+    "military_spending": 2.05257687860637,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": true,
+    "alliances": {
+      "nato": false,
+      "un": true,
+      "eu": false
+    },
+    "relations": {}
+  },
+  "US": {
+    "iso2": "US",
+    "name": "United States",
+    "gdp": 28750956130731.2,
+    "inflation": 2.94952520485207,
+    "unemployment": 4.022,
+    "military_spending": 3.41921653228044,
+    "corruption": 50,
+    "humanDevIndex": 0.7,
+    "govStability": 100,
+    "regime": "Democracy",
+    "tradeBalance": 0,
+    "army": 1000,
+    "isNuclear": true,
     "alliances": {
       "nato": false,
       "un": true,
