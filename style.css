@@ -34,6 +34,10 @@ path:hover {
   width: 25vw;
   height: 100vh;
   border-left: 3px solid #6e6e6e;
+  transition: all 0.3s ease-in-out;
+}
+.infoCenter:hover {
+  border-left: 3px solid#6e94fc;
 }
 .wrapper {
   display: flex;
@@ -70,13 +74,13 @@ path:hover {
   transition: all 0.3s ease-in-out;
 }
 .input:focus {
-  border-bottom: 3px solid #525252;
+  border-bottom: 3px solid #6e94fc;
 }
 .activeCountry {
     fill: #1ed85f !important;
 }
 .countryTitle {
-  color: #1ed85f;
+  color: #6e94fc;
   text-align: center;
   font-size: 3rem;
 }
@@ -86,4 +90,6 @@ path:hover {
 .info {
   color: white;
   white-space: pre-line;
+  text-align: center;
+  font-size: 1.3rem;
 }

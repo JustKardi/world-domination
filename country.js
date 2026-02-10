@@ -24,6 +24,8 @@ export class Country {
             un: true,
             eu: false
         };
+
+        this.revoltCounter = 0;
     }
 
     update() {
