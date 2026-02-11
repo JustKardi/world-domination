@@ -1,30 +1,86 @@
-function r(a) {
-    return Math.floor(Math.random() * a);
+function randFloat(min, max) {
+    return Math.random() * (max - min) + min;
 }
 
-export function update(country, startGDP) {
-    if (country.stability < 50) {
-        country.inflation += r(5);
-        country.unemployment += r(5);
-        country.gdp -= r(1000000000000);
-        country.corruption += r(2);
-        country.humanDevIndex -= r(0.2);
-        country.army -= r(1000);
+function clamp(value, min, max) {
+    return Math.max(min, Math.min(max, value));
+}
+
+export function update(country, previousGDP) {
+
+    let baseGrowth =
+        0.01 +                               
+        (country.govStability - 50) * 0.0002  
+        - (country.corruption * 0.0003); 
+
+    baseGrowth += randFloat(-0.01, 0.01);
+
+    country.gdp *= (1 + baseGrowth);
+
+    country.gdp = Math.max(0, country.gdp);
+
+    let inflationPressure =
+        (country.militaryExp * 0.02) -
+        (country.govStability * 0.01);
+
+    country.inflation += inflationPressure;
+    country.inflation += (2 - country.inflation) * 0.05;
+    country.inflation += randFloat(-0.2, 0.2);
+
+    if (country.gdp > previousGDP) {
+        country.unemployment -= randFloat(0.1, 0.3);
+    } else {
+        country.unemployment += randFloat(0.1, 0.3);
     }
-    if (country.stability <= 0) {
-        country.regime = (r(1)) ? 'Autocracy' : 'Democracy';
-        let counter = 90;
-        for (let i = 0; i < country.revoltCounter; i++) {
-            counter *= r(0.99);
+
+    if (country.inflation > 6) {
+        country.unemployment += 0.2;
+    }
+
+    country.govStability +=
+        (country.humanDevIndex - 0.5) * 2 -
+        (country.unemployment * 0.05) -
+        (country.inflation * 0.03) -
+        (country.corruption * 0.04);
+
+    country.govStability += randFloat(-1, 1);
+
+    country.humanDevIndex +=
+        (country.gdp / 1_000_000_000_000) * 0.0005 -
+        (country.corruption * 0.0005);
+
+    country.humanDevIndex += randFloat(-0.005, 0.005);
+
+    if (country.regime === "Autocracy") {
+        country.corruption += randFloat(0, 0.5);
+    } else {
+        country.corruption -= randFloat(0, 0.3);
+    }
+
+    country.militaryExp += randFloat(-0.2, 0.2);
+
+    country.army += (country.militaryExp * 10);
+    country.army += randFloat(-50, 50);
+
+    if (country.govStability <= 10) {
+
+        if (Math.random() < 0.3) {
+            country.regime =
+                country.regime === "Democracy"
+                    ? "Autocracy"
+                    : "Democracy";
         }
-        country.stability = Math.floor(counter);
-        country.gdp -= r(20000000000000);
-        country.army /= 2;
+
+        country.govStability = 50;
+        country.gdp *= 0.9;
+        country.army *= 0.7;
     }
-    if (country.gdp < startGDP) {
-        country.stability -= r(3);
-        country.unemployment += r(1);
-        country.humanDevIndex -= r(0.1);
-        country.militaryExp -= r(0.5);
-    }
+
+    country.inflation = clamp(country.inflation, -5, 25);
+    country.unemployment = clamp(country.unemployment, 0, 40);
+    country.govStability = clamp(country.govStability, 0, 100);
+    country.corruption = clamp(country.corruption, 0, 100);
+    country.humanDevIndex = clamp(country.humanDevIndex, 0, 1);
+    country.militaryExp = clamp(country.militaryExp, 0, 20);
+    country.army = Math.max(0, country.army);
 }

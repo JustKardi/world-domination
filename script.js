@@ -1,10 +1,12 @@
 import { Country } from './country.js';
+import { update } from './engine.js';
 
 const allPaths = document.querySelectorAll('path');
 const toolTip = document.getElementById('tooltip');
 const title = document.getElementById('countryTitle');
 const hovering = document.getElementById('hovering');
 const info = document.getElementById('info');
+const btn1 = document.getElementById('btn-1');
 let selectedCountry;
 
 const nameToISO = {};
@@ -109,36 +111,27 @@ function setupEventListeners() {
     });
 }
 
-// Load world data FIRST, then set up event listeners
 await loadWorld();
 setupEventListeners();
 
-function nextMonth() {
-    gameState.month++;
-
-    for (const country of Object.values(gameState.nations)) {
-        country.update();
-    }
-
-    console.log(`Month ${gameState.month} processed`);
-}
-
 function renderCountryInfo(country) {
+    if (!country) return;
 
-    info.textContent = `
-        GDP: ${Math.round(country.gdp)}
-        Inflation: ${country.inflation}%
-        Stability: ${Math.round(country.govStability)}
-        Unemployment: ${country.unemployment}%
-        Regime Type: ${country.regime}
-        Corruption: ${country.corruption}
-        Human Development: ${country.humanDevIndex}
-        Military Spending: $${country.militaryExp}
-        Army Power: ${country.army}
-        Nuclear Capability: ${country.isNuclear}
-        Alliances: ${country.alliances}
+    info.innerHTML = `
+        <strong>GDP:</strong> ${Math.round(country.gdp).toLocaleString()}
+        <strong>Inflation:</strong> ${country.inflation}%
+        <strong>Stability:</strong> ${Math.round(country.govStability)}
+        <strong>Unemployment:</strong> ${country.unemployment}%
+        <strong>Regime Type:</strong> ${country.regime}
+        <strong>Corruption:</strong> ${country.corruption}
+        <strong>Human Development:</strong> ${country.humanDevIndex}
+        <strong>Military Spending:</strong> $${country.militaryExp}
+        <strong>Army Power:</strong> ${country.army}
+        <strong>Nuclear:</strong> ${country.isNuclear ? 'Yes' : 'No'}
+        <strong>Alliances:</strong> ${country.alliances}
     `;
 }
+
 
 function getCountryFromPath(path) {
 
@@ -178,3 +171,23 @@ function getCountryFromPath(path) {
 
     return gameState.nations[iso] || null;
 }
+
+function loop() {
+    for (const country of Object.values(gameState.nations)) {
+        const oldGDP = country.gdp;
+        update(country, oldGDP);
+    }
+}
+
+btn1.addEventListener('mousedown', (e) => {
+    console.log("Button Clicked. Current Selected:", selectedCountry?.name);
+    
+    if (selectedCountry) {
+        const oldStability = selectedCountry.govStability;
+        loop();
+        console.log(`Stability Change: ${oldStability} -> ${selectedCountry.govStability}`);
+        renderCountryInfo(selectedCountry);
+    } else {
+        console.warn("No country selected! Click a country on the map first.");
+    }
+});
